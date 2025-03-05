@@ -1,13 +1,13 @@
 <?php
 
 class CadastroAlunos {
-// Array privado armazena atributo da classe aluno
+    
 private $alunos = [];
 
 // cadastro novo aluno
 public function cadastrarAluno($aluno) {
-$this->alunos[] = $aluno; // Adiciona o aluno 
-$this->salvarAlunos(); // Salva no arquivo
+$this->alunos[] = $aluno; // adiciona o aluno 
+$this->salvarAlunos(); 
 }
 
 public function listarAlunos() {
@@ -17,8 +17,8 @@ return $this->alunos;
 // remove aluno cadastrado
 public function removerAluno($matricula) {
 foreach ($this->alunos as $key => $aluno) {
-    if ($aluno->getMatricula() === $matricula) { // Verifica a matrícula 
-        unset($this->alunos[$key]); // Remove o aluno 
+    if ($aluno->getMatricula() === $matricula) { // verifica matrícula 
+        unset($this->alunos[$key]); // remove aluno 
         $this->alunos = array_values($this->alunos); 
         $this->salvarAlunos(); 
         return true; 

@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
     $password = $_POST['password'];
 
     if (Usuario::autenticar($username, $password)) {
-        $_SESSION['loggedin'] = true; // Define como logada
+        $_SESSION['loggedin'] = true; // define como logado
         $_SESSION['username'] = $username; // armazena o nome de usuário 
     } else {
         $loginError = "Usuário ou senha inválidos.";

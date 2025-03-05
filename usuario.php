@@ -27,7 +27,7 @@ public static function autenticar($username, $password) {
     foreach ($usuarios as $usuario) {
 
         if ($usuario->getUsername() === $username && $usuario->getPassword() === $password) {
-            return true; // Retorna verdadeiro se o usuário for autenticado
+            return true; // retorna verdadeiro se o usuário for autenticado
         }
     }
     return false;
