@@ -1,0 +1,113 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4ce;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #0e0e0e;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffffb2;
+    border: 1px solid #ddddddd2;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+form input[type="text"], form input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddddddcd;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #3b67e0;
+    border: none;
+    border-radius: 5px;
+    color: #ffffffdd;
+    font-size: 16px;
+    cursor: pointer;
+    box-sizing: border-box; 
+}
+
+form input[type="submit"]:hover {
+    background-color: #3b67e0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #ffffffc7;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ddddddb6;
+    border-radius: 5px;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box; 
+}
+
+ul li form {
+    display: inline;
+}
+
+ul li form input[type="submit"] {
+    background-color: #c72222;
+    border: none;
+    border-radius: 5px;
+    color: #ffffffc6;
+    cursor: pointer;
+    padding: 5px 10px;
+    box-sizing: border-box; 
+}
+
+ul li form input[type="submit"]:hover {
+    background-color: #c51f1fdd;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    color: #3b67e0db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffffcc;
+    border: 1px solid #ddddddb6;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+}
+
+.login-container p {
+    color: rgb(209, 33, 33);
+}
